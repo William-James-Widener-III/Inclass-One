@@ -14,7 +14,7 @@ public:
    
 	// Sees whether this bag is empty.
 	// Returns True if the bag is empty, or false if not
-	virtual bool isEmpty() const = 0;
+	virtual bool isEmpty() const = 1;
    
 	// Adds a new entry to this bag.
 	// If successful, newEntry is stored in the bag and
