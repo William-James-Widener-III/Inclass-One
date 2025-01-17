@@ -24,6 +24,8 @@ int main()
 	bagTester(bag);
 	
 	bag.doSomething();
+	bag.clear();
+	bag.isEmpty();
 
    return 0;
    
