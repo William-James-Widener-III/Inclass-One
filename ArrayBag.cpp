@@ -77,20 +77,20 @@ int ArrayBag<ItemType>::getFrequencyOf(const ItemType& anEntry) const
    return frequency;
 }  // end getFrequencyOf
 
-template<class ItemType>
+/* template<class ItemType>
 bool ArrayBag<ItemType>::contains(const ItemType& anEntry) const
 {
 	return getIndexOf(anEntry) > -1;
 }  // end contains
-
+*/
 /* ALTERNATE 1: First version
 template<class ItemType>
 bool ArrayBag<ItemType>::contains(const ItemType& target) const 
 {
    return getFrequencyOf(target) > 0;
 }  // end contains
-
-// ALTERNATE 2: Second version 
+*/
+ALTERNATE 2: Second version 
 template<class ItemType>
 bool ArrayBag<ItemType>::contains(const ItemType& anEntry) const
 {
@@ -108,7 +108,7 @@ bool ArrayBag<ItemType>::contains(const ItemType& anEntry) const
    
    return found;
 }  // end contains
-*/
+
 
 template<class ItemType>
 std::vector<ItemType> ArrayBag<ItemType>::toVector() const
