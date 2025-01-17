@@ -21,10 +21,10 @@ int ArrayBag<ItemType>::getCurrentSize() const
 }  // end getCurrentSize
 
 template<class ItemType>
-bool ArrayBag<ItemType>::isEmpty() const
+bool ArrayBag<ItemType>::isNotEmpty() const
 {
-	return itemCount == 0;
-}  // end isEmpty
+	return itemCount != 0;
+}  // end isNotEmpty
 
 template<class ItemType>
 bool ArrayBag<ItemType>::add(const ItemType& newEntry)
